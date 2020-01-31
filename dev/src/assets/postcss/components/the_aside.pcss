@@ -1,0 +1,42 @@
+.aside {
+    text-align: center;
+    font-family: SF-400;
+    color: #A4A4A4;
+    &__alert {
+        h2 {
+            font-family: SF-700;
+        }
+    }
+}
+
+@media (--desktop-m) {
+    .aside {
+        position: fixed; top: 0; left: 0;      
+        z-index: 10;        
+        height: 100%;          
+        width: calc((100% - $container) / 2);   
+        @include flex(center, center);         
+        transition: 0.2s;
+        &__wrap {            
+            transition: 0.2s;
+            opacity: 0.5;            
+            &:hover {
+                opacity: 1;                
+                    svg {
+                        path:last-child {
+                            fill: #FF3F3F 
+                    }
+                }
+            }            
+        }        
+        svg {   
+            @include size(w(60), w(44));
+        }
+        &__item {
+            cursor: pointer;
+            p {
+                margin-top: w(10);
+            }
+        }       
+    }    
+}

@@ -1,0 +1,20 @@
+.the-navigation {
+    position: fixed; top: 0; right: 0;      
+    z-index: 10;        
+    height: 100%;          
+    width: calc((100% - $container) / 2);   
+    @include flex(center, center);        
+    &__wrap {
+        transition: 0.2s;        
+        svg {
+            display: block; 
+            font-size: w(60);
+            color: #a4a4a4;
+            cursor: pointer;              
+            opacity: 0.5;
+            &:hover {
+                opacity: 1;
+            }          
+        }
+    }             
+}

@@ -1,0 +1,19 @@
+{
+  "name": "brief",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dpprod": "cd prod && npm i",
+    "start": "nodemon server.js",
+    "dev": "cd dev && npm run dev",
+    "lint": "cd dev && vue-cli-service lint",
+    "build": "cd dev && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.19.0"
+  }
+}

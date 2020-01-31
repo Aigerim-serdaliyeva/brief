@@ -1,0 +1,79 @@
+@custom-media --desktop-m (min-width: 960px);
+@custom-media --mobile-m (max-width: 960px);
+
+.d-none {
+    display: none !important;
+}
+
+.pos-a-0 {
+    position: absolute;
+    top: 0; left: 0;
+}
+
+$width50: 45.16%;
+
+.w-50 {
+    width: $width50;
+}
+
+// Для того чтобы было пустое место справа
+.w-100-but-child-50 {
+    width: 100%;
+    input, textarea {
+        width: $width50 !important;
+    }
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.col-red {
+    color: red
+}
+
+.lh-n {
+    line-height: normal;
+}
+
+.pos-f-0 {
+    position: fixed;
+    top: 0; left: 0;
+}
+
+.item-checkbox-type1 {
+    display: flex; flex-wrap: wrap;    
+    label {        
+        @include flex(center,center);
+        border: 1px solid #CECECE;
+        background: #fff;  
+        padding: w(18) w(20);                                                
+        margin: 0 w(20) w(20) 0;
+        &:hover {
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);                        
+        }               
+    }
+    input:checked+label {
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);                    
+    }
+}
+
+.item-checkbox-type2 {    
+    flex-direction: column;
+    article label {
+        padding-bottom: w(20);
+    }
+    label {        
+        display: flex;
+    }    
+}
+
+.as-button {
+    border: 1px solid #CECECE;
+    background: #fff;  
+}
+
+.opacity-0 {
+    opacity: 0;
+    visibility: hidden;    
+}

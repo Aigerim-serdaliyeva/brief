@@ -1,0 +1,146 @@
+.form-part {
+    h2 {
+        text-align: center;
+        color: #E0E0E0;
+        font-family: SF-900;
+        text-transform: uppercase;                
+    }
+    input, textarea {
+        font-family: SF-400;
+    }
+    h3 {
+        font-family: SF-700;                
+        color: #717171;
+        span.span-required {
+            color: red;
+        }
+        span.span-default {
+            font-family: SF-400;
+        }
+        span.span-italic {
+            font-family: SF-italic;
+            color: #A4A4A4;
+        }
+    }
+    &__item-checkbox, &__item-file {
+        label {
+            color: #A4A4A4;                       
+        }
+    }
+}
+
+@media(--desktop-m) {
+    .form-part {   
+        border-bottom: 2px solid #F1F1F1;     
+        h2 {
+            font-size: w(72);
+            @include flex(space-between, center);
+            padding:w(80) 0 w(20);
+            &::before, &::after {
+                content: ''; position: relative; display: block;                
+                @include size(2px, w(280)); background: #F1F1F1;                
+            }            
+        }
+        &__items {
+            @include flex(space-between, center);
+            flex-wrap: wrap;
+        }        
+        &__item {
+            margin-bottom: w(50);            
+            h3 {
+                position: relative;
+                padding-bottom: w(12);   
+                span.span-italic {                    
+                    margin-left: w(20);
+                    font-size: w(18);
+                }                             
+            }                                    
+            input {                
+                @include size(w(60), 100%);                        
+            }
+            textarea {
+                @include size(w(150), 100%);
+                padding-top: w(25);
+            }
+            h3, input, textarea {
+                font-size: w(24);                
+                padding-left: w(25);
+            }            
+        }
+        &__item-checkbox {
+            display: flex; flex-wrap: wrap;                   
+            label {                
+                font-size: w(20);                
+                cursor: pointer;       
+                transition: box-shadow 0.2s;  
+                user-select: none;       
+                .square {                    
+                    @include size(w(20), w(20));
+                    background: #fff;
+                    border: 1px solid #CECECE;
+                    margin-right: w(15);
+                    position: relative;                    
+                        &::after {
+                            content: '';
+                            position: absolute; top: 0;  right: 0;
+                            bottom: w(3); left: 0; margin: auto;
+                            @include size(w(16), w(21));
+                            transition:opacity 0.2s;
+                            opacity: 0; visibility: hidden;
+                            background: url('~@/assets/images/checked.svg'); 
+                            background-size: 100% 100%;
+                            background-position: 0 0;                                               
+                        }
+                }                
+           
+            }                     
+            input {
+                display: none; visibility: hidden; pointer-events: none;            
+                &:checked+label {
+                    .square::after {
+                        opacity: 1; visibility: visible;
+                    }                    
+                }
+            }     
+        }
+        &__item-file {  
+            width: w(700);          
+            display: flex; flex-wrap: wrap;
+            label {
+                font-size: w(20);
+                cursor: pointer;
+                width: w(190);
+                @include flex(space-between,center);
+                padding: w(18) w(20);                
+                svg {                    
+                    @include size(w(24),w(24));
+                }
+            }
+            article {
+                display: inline-flex; align-items: flex-end; justify-content: center;
+                margin: w(16) w(31) w(20) 0;
+                 user-select: none;   
+                svg {
+                    &:first-of-type {
+                        @include size(w(34.97), w(29.45))
+                    }
+                    &:last-of-type {
+                        @include size(w(18.77), w(18.28));
+                        cursor: pointer;
+                                            
+                    }
+                }
+                p {
+                    color: #A4A4A4;
+                    font-size: w(16); 
+                    margin: 0 w(11) 0 w(5);
+                }
+            }
+            input {
+                display: none; visibility: hidden; pointer-events: none;            
+                &:checked+label {                    
+                }
+            }                 
+        }
+    }
+}

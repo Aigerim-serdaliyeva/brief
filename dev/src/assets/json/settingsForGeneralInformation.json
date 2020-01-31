@@ -1,0 +1,49 @@
+[
+    {
+       "title": "Название компании",
+       "required": true,
+       "classParent": "w-50",
+       "itemAttr": {
+          "type": "text"
+       },
+       "vModel": ""
+    },
+    {
+       "title": "Сфера деятельности",
+       "required": true,
+       "classParent": "w-50",
+       "itemAttr": {
+          "type": "text"
+       },
+       "vModel": ""
+    },
+    {
+       "title": "Дополнительная информация о компании",
+       "required": false,
+       "classParent": "w-100",
+       "type": "textarea",
+       "vModel": ""
+    },
+    {
+       "title": "Существующий сайт",
+       "span": "(если имеется)",
+       "required": false,
+       "classParent": "w-100-but-child-50",
+       "classSpan": "span-default",
+       "vModel": ""
+    },
+    {
+       "title": "Основные группы продукции и/или услуг",
+       "required": true,
+       "classParent": "w-50",
+       "type": "textarea",
+       "vModel": ""
+    },
+    {
+       "title": "Каково основное достоинство продукта/услуги?",
+       "required": true,
+       "classParent": "w-50",
+       "type": "textarea",
+       "vModel": ""
+    }
+ ]

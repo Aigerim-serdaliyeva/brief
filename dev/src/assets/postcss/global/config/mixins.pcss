@@ -1,0 +1,23 @@
+@mixin flex($jc:flex-start, $ai:flex-start, $fld:row) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fld;
+}
+
+@mixin size($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin coverCenter() {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@mixin center100()  {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;    
+}

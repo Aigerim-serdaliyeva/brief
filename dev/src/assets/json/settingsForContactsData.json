@@ -1,0 +1,38 @@
+[
+    {
+       "title": "ФИО",
+       "required": true,
+       "classParent": "w-50",       
+       "itemAttr": {
+          "type": "text"          
+       },
+       "vModel": ""
+    },
+    {
+       "title": "Эл. почта",
+       "required": true,
+       "classParent": "w-50",
+       "itemAttr": {
+          "type": "email"
+       },
+       "vModel": ""
+    },
+    {
+       "title": "Телефон",
+       "required": false,
+       "classParent": "w-50",
+       "itemAttr": {
+          "type": "tel"
+       },
+       "vModel": ""
+    },
+    {
+       "title": "Skype",
+       "required": false,
+       "classParent": "w-50",
+       "itemAttr": {
+          "type": "text"
+       },
+       "vModel": ""
+    }
+ ]

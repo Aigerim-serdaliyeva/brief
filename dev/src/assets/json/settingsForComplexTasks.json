@@ -1,0 +1,73 @@
+[
+    {
+       "title": "Дополнительные решения для проекта",
+       "required": true,
+       "type": "checkbox",
+       "classParent": "w-100",
+       "anchorId": "additional-solution-for-project",
+       "classCheckbox": "item-checkbox-type1",
+       "checkboxList": [
+          {
+             "text": "Интеграция с 1C",
+             "id": "cb-1c-integration"
+          },
+          {
+             "text": "Обратный звонок",
+             "id": "cb-back-call"
+          },
+          {
+             "text": "Чат с оператором",
+             "id": "cb-chat-operator"
+          },
+          {
+             "text": "Платежный шлюз",
+             "id": "cb-payment-gateway"
+          },
+          {
+             "text": "Соц. сети",
+             "id": "cb-social"
+          },
+          {
+             "text": "SIP телефония",
+             "id": "cb-sip-tel"
+          },
+          {
+             "text": "Админка",
+             "id": "cb-adminpanel"
+          },
+          {
+             "text": "CRM",
+             "id": "cb-crm"
+          },
+          {
+             "text": "Интеграция с Месенджерами",
+             "id": "cb-messenger-integration"
+          },
+          {
+             "text": "Карты",
+             "id": "cb-maps"
+          },
+          {
+             "text": "Видео плеер",
+             "id": "cb-video-player"
+          },
+          {
+             "text": "QR код",
+             "id": "cb-qrcode"
+          },
+          {
+             "text": "Мобильная версия ПМП",
+             "id": "cb-mobile-pmp"
+          },
+          {
+             "text": "SEO",
+             "id": "cb-seo"
+          },
+          {
+             "text": "Таргетинг и Контекстная реклама",
+             "id": "cb-targeting"
+          }
+       ],
+       "vModel": []
+    }
+ ]

@@ -1,0 +1,60 @@
+[
+    {
+       "title": "Примеры удачных сайтов, цветов, расположения элементов (не менее 2-х)",
+       "required": true,
+       "type": "textarea",
+       "classParent": "w-100",
+       "vModel": ""
+    },
+    {
+        "title": "Файлы",
+        "span": "Конкретные графические изображения, брэндбук (просьба заранее проверять актуальность прекрепляемого материала)",
+        "required": false,        
+        "type": "file",
+        "fileId": "attachment-files",        
+        "classParent": "w-100",        
+        "classSpan": "span-italic",
+        "vModel": []        
+    },
+    {
+       "title": "Дальнейшее развитие и дополнительные услуги",
+       "required": false,
+       "type": "checkbox",       
+       "classParent": "w-100",       
+       "classCheckbox": "item-checkbox-type1",
+       "checkboxList": [
+          {
+             "text": "Размещение сайта в интернете",
+             "id": "cb-place"             
+          },
+          {
+             "text": "Наполнение сайта информацией",
+             "id": "cb-filling"
+          },
+          {
+             "text": "Поддержка сайта",
+             "id": "cb-site-support"
+          },
+          {
+             "text": "Создание рекламных баннеров",
+             "id": "cb-create-banner"
+          },
+          {
+             "text": "Иллюстрации/сложные графические объекты/коллажи",
+             "id": "cb-collage"
+          },
+          {
+             "text": "Пиктограммы и иконки",
+             "id": "cb-icons-pictograms"
+          }
+       ],
+       "vModel": []
+    },
+    {
+       "title": "Ваши пожелания",
+       "required": false,
+       "type": "textarea",
+       "classParent": "w-100",
+       "vModel": ""
+    }
+ ]

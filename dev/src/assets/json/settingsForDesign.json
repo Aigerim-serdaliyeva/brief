@@ -1,0 +1,111 @@
+[
+    {
+       "title": "Настроение и ассоциации, которые должен вызывать дизайн",
+       "required": true,
+       "type": "checkbox",
+       "anchorId": "assosiation-with-design",
+       "classParent": "w-100",
+       "classCheckbox": "item-checkbox-type1",
+       "checkboxList": [
+          {
+             "text": "Строгий корпоративный дизайн",
+             "id": "cb-corporate-design"
+          },
+          {
+             "text": "Яркий, броский дизайн",
+             "id": "cb-light-design"
+          },
+          {
+             "text": "Позитивный и веселый",
+             "id": "cb-positive-design"
+          },
+          {
+             "text": "Дизайн насыщенный иллюстрациями/фотографиями",
+             "id": "cb-design-illustration"
+          },
+          {
+             "text": "Минималистичный дизайн. Упор на функциональность",
+             "id": "cb-design-functional"
+          }
+       ],
+       "vModel": []
+    },
+    {
+       "title": "Внешний вид сайта",
+       "anchorId": "appearance-of-site",
+       "required": true,
+       "type": "radio",
+       "classParent": "w-100",
+       "classCheckbox": "item-checkbox-type2",
+       "checkboxList": [
+          {
+             "text": "У нас есть четкое видение, каким должен быть дизайн нашего сайта",
+             "id": "cb-have-view"
+          },
+          {
+             "text": "У нас нет четкого видения дизайна, мы просто хотим, чтобы дизайн продолжал традиции корпоративного стиля нашей компании",
+             "id": "cb-no-view"
+          },
+          {
+             "text": "Мы полностью доверяем вкусу Ваших специалистов, с портфолио ознакомлены",
+             "id": "cb-trust-for-view"
+          },
+          {
+             "text": "Дизайн сайта может быть разработан по усмотрению разработчиков, но существуют обязательные требования",
+             "id": "cb-usmotrenie-trust"
+          }
+       ],
+       "vModel": []
+    },
+    {
+       "title": "Наличие / расположение блоков на главной странице (какие блоки должны быть виднее всего)",
+       "required": false,
+       "type": "textarea",
+       "classParent": "w-100",
+       "vModel": ""
+    },
+    {
+       "title": "Дизайн",
+       "required": false,
+       "type": "radio",
+       "classParent": "w-50",
+       "classCheckbox": "item-checkbox-type2",
+       "checkboxList": [
+          {
+             "text": "Предоставляется",
+             "id": "cb-provided"
+          },
+          {
+             "text": "Дорабатывается, восстанавливается",
+             "id": "cb-finalized"
+          },
+          {
+             "text": "Рисуется дизайнером заново",
+             "id": "cb-is-drawn"
+          }
+       ],
+       "vModel": []
+    },
+    {
+       "title": "Фирменный стиль",
+       "required": false,
+       "type": "radio",
+       "classParent": "w-50",
+       "classCheckbox": "item-checkbox-type2",
+       "checkboxList": [
+          {
+             "text": "Фотографическое изображение",
+             "id": "cb-foto-image"
+          },
+          {
+             "text": "Рисованная графика",
+             "id": "cb-hand-drawn-graphics"
+          },
+          {
+             "text": "Минимализм",
+             "id": "cb-minimalizm"
+          }
+       ],
+       "vModel": []
+    }
+ ]

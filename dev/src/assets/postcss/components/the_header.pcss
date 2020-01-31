@@ -1,0 +1,68 @@
+.header {
+    font-family: SF-400;
+    color: #717171;
+    &__title-text span, &__menu-title {        
+        font-family: SF-900;    
+    }
+    &__menu-title {
+        color: #4F4F4F;
+    }
+    a {        
+        color: #349EFF;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }    
+}
+
+@media(--desktop-m) {
+    .header {
+        &__title {
+            @include flex(space-between,center);  
+            padding-bottom: w(124);          
+        }        
+        &__title-text, &__title-image {
+            flex: 1;
+        }
+        &__title-text {                        
+            font-size: w(24);
+            margin-right: w(51);
+            p {
+                &:first-of-type span {                           
+                    font-size: w(36);                
+                }
+                &:not(:last-child) {
+                    margin-bottom: w(29);
+                }                
+            }            
+        }
+        &__title-image {            
+            position: relative;
+            display: flex;            
+            background: url('~@/assets/images/header-title-image.png');
+            @include coverCenter;
+            @include size(w(382),100%);
+        }
+        &__menu {
+            text-align: center;
+        }
+        &__menu-title {            
+            font-size: w(36);
+        }
+        &__menu-list {
+            padding-top: w(10);
+            @include flex(center, center);   
+            a:not(:last-child) {
+                margin-right: w(30);
+                position: relative;
+                &::after {
+                    content: '/';
+                    position: absolute; top: 0; bottom: 0; right: w(-17); margin: auto;
+                    color: #4F4F4F;
+                    display: block;
+                }
+            }         
+        }
+    }
+}

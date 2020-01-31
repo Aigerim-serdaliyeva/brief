@@ -1,0 +1,100 @@
+[
+    {
+       "title": "Предполагаемое название сайта",
+       "required": true,
+       "classParent": "w-100",
+       "vModel": ""
+    },
+    {
+       "title": "Предполагаемый тип сайта",
+       "required": true,
+       "classParent": "w-100",
+       "classCheckbox": "item-checkbox-type1",
+       "type": "checkbox",
+       "anchorId": "supposed-site-type",
+       "checkboxList": [
+          {
+             "text": "Сайт визитка",
+             "id": "cb-visitka"
+          },
+          {
+             "text": "Сайт-портфолио",
+             "id": "cb-portfolio"
+          },
+          {
+             "text": "Лендинг",
+             "id": "cb-landing"
+          },
+          {
+             "text": "Корпоративный сайт",
+             "id": "cb-corporate-website"
+          },
+          {
+             "text": "Интернет-магазин",
+             "id": "cb-estore"
+          },
+          {
+             "text": "Информационный портал",
+             "id": "cb-eportal"
+          },
+          {
+             "text": "Блог",
+             "id": "cb-blog"
+          }
+       ],
+       "vModel": []
+    },
+    {
+       "title": "Задачи сайта",
+       "required": true,
+       "classParent": "w-100",
+       "classCheckbox": "item-checkbox-type1",
+       "type": "checkbox",
+       "anchorId": "site-tasks",
+       "checkboxList": [
+          {
+             "text": "Сформировать бренд",
+             "id": "cb-brand"
+          },
+          {
+             "text": "Сформировать сообщество",
+             "id": "cb-community"
+          },
+          {
+             "text": "Донести информацию",
+             "id": "cb-give-information"
+          },
+          {
+             "text": "Получить информацию",
+             "id": "cb-get-information"
+          },
+          {
+             "text": "Продать товар/услугу",
+             "id": "cb-get-item-service"
+          },
+          {
+             "text": "Оптимизировать работу с партнерами",
+             "id": "cb-optimize-work"
+          }
+       ],
+       "vModel": []
+    },
+    {
+       "title": "Предполагаемые пункты меню",
+       "span": "Через запятую. Пример: О нас, Контакты и т.д.",
+       "required": true,
+       "classParent": "w-100",
+       "classSpan": "span-italic",
+       "type": "textarea",
+       "vModel": ""
+    },
+    {
+       "title": "Основные требования и пожеланию по функционалу сайта",
+       "span": "Укажите все, что, с Вашей точки зрения, может уточнить задачу по разработке сайта",
+       "required": true,
+       "classParent": "w-100",
+       "classSpan": "span-italic",
+       "type": "textarea",
+       "vModel": ""
+    }
+ ]

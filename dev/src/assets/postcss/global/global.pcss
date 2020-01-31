@@ -1,0 +1,97 @@
+html {
+    font-family:SF-400, sans-serif;        
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+textarea {
+    resize: none;
+}
+
+// #app {
+//     overflow-x: hidden;
+// }
+
+body {
+    background: #fff;
+}
+
+
+@media (--desktop-m) {
+    .mob {
+        display: none !important;             
+    }
+    html {
+        font-size: 0.8vw;
+    }
+
+    body {      
+        background: #FBFBFB;                  
+        // &::before, &::after {
+        //     content: ''; position: relative; display: block;
+        //     background: #FFFFFF;            
+        //     @include size(w(150), 100%);
+        // }        
+        // &::before {
+        //     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+        // }
+        // &::after {
+        //     box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.3);
+        // }
+    }
+    .container {        
+        width: w(1550);
+        margin: auto;                               
+    }               
+    #app {
+        padding: w(100) 0;        
+    }     
+    .form-submit {
+        text-align: right;
+        padding-top: w(23);
+        button {
+            cursor: pointer;
+            font-family: SF-800;
+            color: #717171;
+            padding: w(20) w(30);
+            font-size: w(20);
+            text-transform: uppercase;    
+            &:disabled {
+                background: #E0E0E0;
+                cursor: default;
+            }        
+        }
+    }    
+} 
+
+@media (--mobile-m) {
+    .desk {
+        display: none !important;
+    }
+    html {
+        font-size: 1vw;
+    }
+} 
+
+
+// *** hover input
+::-webkit-input-placeholder { opacity: 1; -webkit-transition: opacity .5s; transition: opacity .5s; }  /* Chrome <=56, Safari < 10 */
+:-moz-placeholder { opacity: 1; -moz-transition: opacity .5s; transition: opacity .5s; } /* FF 4-18 */
+::-moz-placeholder { opacity: 1; -moz-transition: opacity .5s; transition: opacity .5s; } /* FF 19-51 */
+:-ms-input-placeholder { opacity: 1; -ms-transition: opacity .5s; transition: opacity .5s; } /* IE 10+ */
+::placeholder { opacity: 1; transition: opacity .5s; } /* Modern Browsers */
+
+*:focus::-webkit-input-placeholder { opacity: 0; } /* Chrome <=56, Safari < 10 */
+*:focus:-moz-placeholder { opacity: 0; } /* FF 4-18 */
+*:focus::-moz-placeholder { opacity: 0; } /* FF 19-50 */
+*:focus:-ms-input-placeholder { opacity: 0; } /* IE 10+ */
+*:focus::placeholder { opacity: 0; } /* Modern Browsers */
+// *** /hover input
+
+
